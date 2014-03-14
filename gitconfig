@@ -1,0 +1,19 @@
+[color]
+	branch = auto
+	status = auto
+	diff = auto
+[alias]
+	st = status -sb
+	co = checkout
+	ci = commit
+	d = diff
+	gl = log --oneline --decorate --stat --graph
+	prune-all = !git remote | xargs -n 1 git remote prune
+[core]
+	excludesfile = ~/.gitignore
+	editor = emacs
+	whitespace = cr-at-eol
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
